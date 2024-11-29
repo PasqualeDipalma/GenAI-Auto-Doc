@@ -1,0 +1,36 @@
+gemini-pro:
+  engine: "gemini-1.5-pro-exp-0827"
+  parameters:
+    top_p: 0.95
+    temperature: 0.9
+    frequency_penalty: 0
+    presence_penalty: 0
+    repetition_penalty: 1
+    top_k: 1
+
+llama:
+  engine: "meta-llama/llama-3.1-405b-instruct:free"
+  parameters:
+    top_p: 1
+    temperature: 0.9
+    frequency_penalty: 0
+    presence_penalty: 0
+    repetition_penalty: 1
+    top_k: 0
+
+gemini-flash:
+  engine: "gemini-1.5-flash-8b-exp-0827"
+  parameters:
+    top_p: 0.95
+    temperature: 0.9
+    frequency_penalty: 0
+    presence_penalty: 0
+    repetition_penalty: 1
+    top_k: 1
+
+sleep_time: 4
+
+# local o API
+# local -> modello locale
+# API -> modello tramite API
+model_type: "API"
